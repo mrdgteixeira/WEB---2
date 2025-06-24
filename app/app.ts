@@ -9,7 +9,7 @@ async function buildApp() {
   const app = Fastify();
 
   await app.register(fastifyCors, {
-    origin: '*', // ou defina seu frontend
+    origin: '*',
   });
 
   app.register(bankRoutes, { prefix: '/banks' });
